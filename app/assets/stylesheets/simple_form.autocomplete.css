@@ -1,0 +1,22 @@
+.autocomplete-w1 { position:absolute; top:0px; left:0px; margin:8px 0 0 6px; /* IE6 fix: */ _background:none; _margin:0; }
+.autocomplete-w1 .autocomplete { border:1px solid #999; background:#FFF; cursor:default; text-align:left; max-height:350px; overflow:auto; margin:-6px 6px 6px -6px; /* IE6 specific: */ _height:350px;  _margin:0; _overflow-x:hidden; }
+.autocomplete-w1 .autocomplete .selected { background:#F0F0F0; }
+.autocomplete-w1 .autocomplete div { padding:2px 5px; white-space:nowrap; }
+.autocomplete-w1 .autocomplete strong { font-weight:normal; color:#3399FF; }
+
+.autocomplete input{display:inline-block;float:none;width:390px;margin-left:0;}
+
+.autocomplete_selections { width: 398px !important; border: 1px solid #ccc; -webkit-transition: border linear 0.2s,box-shadow linear 0.2s;
+-moz-transition: border linear 0.2s,box-shadow linear 0.2s;
+-ms-transition: border linear 0.2s,box-shadow linear 0.2s;
+-o-transition: border linear 0.2s,box-shadow linear 0.2s;
+transition: border linear 0.2s,box-shadow linear 0.2s;
+-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+-moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+.autocomplete_selections li { padding: 4px !important; width: 390px !important; }
+.autocomplete_selections li a { float: right; }
