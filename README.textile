@@ -6,27 +6,27 @@ h2. Example
 
 h3. Models
 
-<notextile><pre>
+<pre>
 class Book < ActiveRecord::Base
   belongs_to :author
   has_and_belongs_to_many :categories
 end
-</pre></notextile>
+</pre>
 
 h3. Form
 
-<notextile><pre>
+<pre>
 <%= simple_form_for @book do |f| %>
   <%= f.input :author, :as => :autocomplete, :source => authors_path %>
   <%= f.input :categories, :as => :autocomplete, :source => categories_path %>
 <% end %>
-</pre></notextile>
+</pre>
 
 h3. Controller
 
 The AJAX call passes a *query* parameter, which should be used to determine the records to send back. The controller should return a JSON hash with 3 keys: query, suggestions, and data.
 
-<notextile><pre>
+<pre>
 class AuthorsController < ApplicationController
   def index
     respond_to do |format|
@@ -37,7 +37,7 @@ class AuthorsController < ApplicationController
     end
   end
 end
-</pre></notextile>
+</pre>
 
 CategoriesController follows the same convention.
 
