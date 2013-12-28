@@ -3,6 +3,8 @@ class AutocompleteInput < SimpleForm::Inputs::CollectionInput
   def input
     label, value = detect_collection_methods
     
+    # if reflection is not already set, set it
+    @reflection = @reflection || object.reflections[attribute_name]
     case reflection.macro
     when :belongs_to
       @builder.hidden_field(attribute_name) + 
